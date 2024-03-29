@@ -27,17 +27,23 @@
                 <input type="text" name="" id="nome_de_usuario" placeholder="Digite seu nome">
                 <h3>Sobrenome:</h3>
                 <input type="text" name="" id="sobrenome_de_usuario" placeholder="Digite seu sobrenome">
-                <h3>Crie uma senha:</h3>
+                <div id="icon_senha_principal1">
+                    <h3>Crie uma senha:</h3>
+                </div>
                 <input type="password" name="pass" id="senha_de_usario" placeholder="Crie sua senha">
+                <button id="button_icon"><i id="icon_senha2"class="bi bi-eye-slash"></i></button>
                 <p id="senha">clique quantas vezes quiser p/ criar uma senha</p>
                 <div id="container_senha">
                     <i id="icon_excluir" class="bi bi-archive"></i>
                     <p>Gere sua senha:</p>
-                    <h3 id="senhacriada">SENHA</h3>
+                    <h3 id="senhacriada" onclick="copyText()">SENHA</h3>
+                    <h4 id="copied"></h4>
                     
                 </div>
-                <h3>Confirme a sua senha:</h3>
-                <input type="password" name="pass" id="senha_de_usario_confirm" placeholder="Confirme sua senha">
+                <div id="icon_senha_principal1">
+                    <h3>Confirme a sua senha:</h3>
+                </div>
+                <input type="password" name="pass" id="senha_de_usario_confirm" placeholder="Confirme sua senha"> <button id="button_icon2"><i id="icon_senha2"class="bi bi-eye-slash"></i></button>
                 <button id="button_confirm">Cadastrar</button>
             </div>
 
